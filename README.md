@@ -52,6 +52,14 @@
     </tr>
 </table>
 
+## 🎬 Video Preview
+
+<div>
+    <a href="https://youtu.be/rvwHPQZh_fg" target="_blank">
+        <img src="https://img.shields.io/badge/YouTube-🎬%20Click%20Here-FF0000?style=for-the-badge&logo=youtube&logoColor=white&labelColor=cc0000" alt="YouTube" loading="lazy">
+    </a>
+</div>
+
 <br>
 
 > ⚡ Created by [Gusti Agung](https://github.com/gustiagung19) to speed up FiveM development.
