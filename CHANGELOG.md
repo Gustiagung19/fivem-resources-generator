@@ -1,5 +1,10 @@
 # Change Log
 
+## v1.0.1
+## 📢 What's New
+
+- ✅ Added video preview in README
+
 ## v1.0.0
 ### 🎉 Initial Release
 
