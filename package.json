@@ -3,7 +3,7 @@
   "name": "fivem-resources-generator",
   "displayName": "FiveM Resources Generator",
   "description": "Quickly build new FiveM resources using auto-generated templates.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "icon": "logo.png",
   "engines": {
     "vscode": "^1.102.0"
