@@ -1,0 +1,86 @@
+{
+  "publisher": "gustiagung",
+  "name": "fivem-resources-generator",
+  "displayName": "FiveM Resources Generator",
+  "description": "Quickly build new FiveM resources using auto-generated templates.",
+  "version": "1.0.0",
+  "icon": "logo.png",
+  "engines": {
+    "vscode": "^1.102.0"
+  },
+  "homepage": "https://github.com/gustiagung19/fivem-resources-generator/blob/master/README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gustiagung19/fivem-resources-generator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gustiagung19/fivem-resources-generator/issues"
+  },
+  "categories": [
+    "Other"
+  ],
+  "keywords": [
+    "fivem",
+    "resource",
+    "generator",
+    "gustiagung"
+  ],
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "fivem-resources-generator.create.esx",
+        "title": "Create ESX Resource"
+      },
+      {
+        "command": "fivem-resources-generator.create.qbcore",
+        "title": "Create QBCore Resource"
+      }
+    ],
+    "submenus": [
+      {
+        "id": "fivem-resources-generator.submenu",
+        "label": "Create FiveM Resource"
+      }
+    ],
+    "menus": {
+      "explorer/context": [
+        {
+          "submenu": "fivem-resources-generator.submenu",
+          "when": "explorerResourceIsFolder",
+          "group": "navigation"
+        }
+      ],
+      "fivem-resources-generator.submenu": [
+        {
+          "command": "fivem-resources-generator.create.esx",
+          "group": "1"
+        },
+        {
+          "command": "fivem-resources-generator.create.qbcore",
+          "group": "2"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.102.0",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "20.x",
+    "@typescript-eslint/eslint-plugin": "^8.31.1",
+    "@typescript-eslint/parser": "^8.31.1",
+    "eslint": "^9.25.1",
+    "typescript": "^5.8.3",
+    "@vscode/test-cli": "^0.0.11",
+    "@vscode/test-electron": "^2.5.2"
+  }
+}
